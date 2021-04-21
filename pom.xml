@@ -2,35 +2,27 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>gatewayService</artifactId>
-	<packaging>jar</packaging>
-
-	<name>gatewayService</name>
-	<url>http://maven.apache.org</url>
-
 	<parent>
 		<groupId>com.lzh</groupId>
-		<artifactId>myparent</artifactId>
+		<artifactId>myCommon</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<artifactId>gatewayservice</artifactId>
+	<name>gatewayservice</name>
+	
 	<dependencies>
 		<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <exclusions>
-		        <exclusion>
-		            <groupId>org.springframework.boot</groupId>
-		            <artifactId>spring-cloud-starter-web</artifactId>
-		        </exclusion>
-	        </exclusions>
-        </dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-security</artifactId>
+		</dependency>
+
 		<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-gateway</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
-		<finalName>gatewayService</finalName>
+		<finalName>gatewayservice</finalName>
 		<plugins>
 			<!-- <plugin> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-maven-plugin</artifactId> 
 				</plugin> -->

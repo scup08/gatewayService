@@ -1,0 +1,11 @@
+server:
+  port: 9002 
+spring:
+  application:
+    name: gatewayservice
+logging:
+  level:
+    com.fivecm.pybase.service: debug
+    com.fivecm.pybase.mapper: debug
+springdoc:
+  show-login-endpoint: false
